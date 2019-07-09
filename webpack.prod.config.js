@@ -1,8 +1,10 @@
 // const path = require('path');
 const webpackCommonConfig = require('./webpack.common.config.js');
 
-const config = Object.assign({}, webpackCommonConfig, {
-	mode: "production"
-});
+function config(opts) {
+	return Object.assign({}, webpackCommonConfig(opts), {
+		mode: "production"
+	})
+}
 
 module.exports = config;

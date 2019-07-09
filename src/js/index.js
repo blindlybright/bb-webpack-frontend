@@ -1,4 +1,5 @@
-import _ from 'lodash';
+import '../scss/styles.scss';
+import { _ } from './vendors.js';
 
 function component() {
   const element = document.createElement('div');
@@ -10,3 +11,11 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+class Comp {
+  constructor() {
+    console.log(111333);
+    debugger;
+  }
+}
+new Comp;

@@ -1,7 +1,13 @@
+# IDE
 .idea/
 
+# node && npm
 node_modules/
 package-lock.json
 
+# builds and temporaries
 dist/
 *.bak
+
+# local info, not for repo
+stats.json
