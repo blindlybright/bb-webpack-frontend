@@ -7,6 +7,7 @@ function config(opts) {
 		devtool: "inline-source-map",
 		devServer: {
 			contentBase: './src',
+			watchContentBase: true,   // for watch .html files
 			index: "index.html",
 			openPage: ""
 		}

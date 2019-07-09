@@ -15,7 +15,6 @@ document.body.appendChild(component());
 class Comp {
   constructor() {
     console.log(111333);
-    debugger;
   }
 }
 new Comp;
