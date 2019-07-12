@@ -1,2 +1,2 @@
 # bb-webpack-frontend
-bnlindlybright's webpack configuration
+blindlybright's webpack configuration

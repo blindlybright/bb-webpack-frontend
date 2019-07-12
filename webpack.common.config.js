@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -79,10 +79,18 @@ function config(opts) {
 					test: /\.scss$/,
 					use: [
 						// fallback to style-loader in development
-						!opts.isProduction ? 'style-loader' : MiniCssExtractPlugin.loader,
+						!opts.isProduction ? 'style-loader' : {
+							loader: MiniCssExtractPlugin.loader,
+							options: {
+								publicPath: '../'
+							}
+						},
 						{
 							loader: "css-loader",
-							options: { sourceMap: true }
+							options: {
+								sourceMap: true,
+								url: true,
+							}
 						},
 						{
 							loader: "postcss-loader",
@@ -109,6 +117,16 @@ function config(opts) {
 							plugins: ['@babel/plugin-proposal-object-rest-spread']
 						}
 					}
+				},
+				{
+					test: /\.(png|jp(e*)g|gif|svg)$/,
+					use: [{
+						loader: 'url-loader',
+						options: {
+							limit: 4000, // Convert images < 8kb to base64 strings
+							name: 'images/[name].[ext]'
+						}
+					}]
 				}
 			]
 		},

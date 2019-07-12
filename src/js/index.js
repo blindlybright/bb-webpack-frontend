@@ -18,3 +18,12 @@ class Comp {
   }
 }
 new Comp;
+
+fetch('json/json.json', {})
+  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    console.log(JSON.stringify(response));
+  }, (error) => {
+    console.error(error);
+  });

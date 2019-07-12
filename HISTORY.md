@@ -1,5 +1,12 @@
 ### ChangeLog
 
+###### v0.0.3 [2019.07.13|2:12~3]
+
+* add images processing (serve && [likely for svg] copy)
+* fix for images paths from css (& file-loader is as dep for url-loader)
+* fetch example
+* copy for jsons
+
 ###### v0.0.2 [2019.07.09|5:47~2.5]
 
 Done:
