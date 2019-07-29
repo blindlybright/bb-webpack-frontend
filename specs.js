@@ -3,6 +3,16 @@
 // This will search for files ending in .spec.js and require them
 // so that they are added to the webpack bundle
 
-const context = require.context('./src', true, /.*\.spec\.js$/);
-context.keys().forEach(context);
-module.exports = context;
+
+const testsContext = require.context('./src', true, /.*\.spec\.js$/);
+testsContext.keys().forEach(testsContext);
+
+
+// modules that are not tests
+const modulesContext = require.context('./src', true, /^(?!.*(?:\.spec\.js$)).*\.js$/);
+modulesContext.keys().forEach(modulesContext);
+
+module.exports = {
+    testsContext,
+    modulesContext
+};

@@ -1,5 +1,12 @@
 ### ChangeLog
 
+###### v0.0.5 [2019.07.29|22:52~4]
+
+* add istanbul-instrumenter-loader for coverage reporting
+* add preventing coverage generation while watching tests
+* minor refactor tests tasks
+* add correct tests use (see specs.js)
+
 ###### v0.0.4 [2019.07.29|14:52~16?]
 
 * add karma testing engine
