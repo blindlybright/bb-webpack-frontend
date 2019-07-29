@@ -1,21 +1,18 @@
-# bb-webpack-frontend
+### bb-webpack-frontend
 
-blindlybright's webpack configuration (`[]` -- are the plans)
+blindlybright's webpack configuration (see ROADMAP.md for the plans)
 
 features:
 
 * development, production & test environments
 * webpack bundle analyzer instrument
 * code coverage map by tests
-* `[mocks]` (for developing api independently)
-* `[git hooks]` (for preventing push of broken changes)
 
 technologies used:
 
 * webpack
 * karma
 * mocha
-* `[chai, sinon]` (async availabilities)
 
 as an example:
 

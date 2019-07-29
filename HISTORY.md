@@ -1,5 +1,10 @@
 ### ChangeLog
 
+###### v0.0.6 [2019.07.29|23:24~.5]
+
+* add ROADMAP.md
+* fixes for README.md
+
 ###### v0.0.5 [2019.07.29|22:52~4]
 
 * add istanbul-instrumenter-loader for coverage reporting
