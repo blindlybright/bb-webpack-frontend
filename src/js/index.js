@@ -1,5 +1,6 @@
 import '../scss/styles.scss';
 import { _ } from './vendors.js';
+import { add } from './fn.js';
 
 function component() {
   const element = document.createElement('div');
@@ -14,7 +15,8 @@ document.body.appendChild(component());
 
 class Comp {
   constructor() {
-    console.log(111333);
+
+    console.log(add(1, 107));
   }
 }
 new Comp;

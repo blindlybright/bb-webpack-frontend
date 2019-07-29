@@ -1,5 +1,14 @@
 ### ChangeLog
 
+###### v0.0.4 [2019.07.29|14:52~16?]
+
+* add karma testing engine
+* add mocha framework for karma testing
+* split tests into dynamically connectable parts (*.spec.js)
+* add watch mode for tests monitoring (and for sources changing)
+* add sourcemaps for tests
+* add chrome launcher for karma
+
 ###### v0.0.3 [2019.07.13|2:12~3]
 
 * add images processing (serve && [likely for svg] copy)
