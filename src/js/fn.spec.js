@@ -21,8 +21,8 @@ describe("Demo describe 'mul'", () => {
     });
 });
 
-describe("Demo describe 'div'", () => {
-    it("should div correctly", () => {
-        assert.strictEqual(div(2, 2), 1);
-    });
-});
+// describe("Demo describe 'div'", () => {
+//     it("should div correctly", () => {
+//         assert.strictEqual(div(2, 2), 2);
+//     });
+// });
