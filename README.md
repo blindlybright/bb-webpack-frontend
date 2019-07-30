@@ -7,6 +7,7 @@ features:
 * development, production & test environments
 * webpack bundle analyzer instrument
 * code coverage map by tests
+* git hooks for precommit & prepush
 
 technologies used:
 

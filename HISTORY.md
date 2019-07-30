@@ -1,5 +1,9 @@
 ### ChangeLog
 
+###### v0.0.7 [2019.07.30|8:40~.5]
+
+* add husky package for precommit & prepush git hooks
+
 ###### v0.0.6 [2019.07.29|23:24~.5]
 
 * add ROADMAP.md
