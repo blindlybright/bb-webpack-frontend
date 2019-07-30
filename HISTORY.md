@@ -1,17 +1,21 @@
 ### ChangeLog
 
+###### v0.0.8 [2019.07.30|16:40~.5]
+
+* add `chai` for asserts library
+
 ###### v0.0.7 [2019.07.30|8:40~.5]
 
-* add husky package for precommit & prepush git hooks
+* add `husky` package for precommit & prepush git hooks
 
 ###### v0.0.6 [2019.07.29|23:24~.5]
 
-* add ROADMAP.md
-* fixes for README.md
+* add `ROADMAP.md`
+* fixes for `README.md`
 
 ###### v0.0.5 [2019.07.29|22:52~4]
 
-* add istanbul-instrumenter-loader for coverage reporting
+* add `istanbul-instrumenter-loader` for coverage reporting
 * add preventing coverage generation while watching tests
 * minor refactor tests tasks
 * add correct tests use (see specs.js)

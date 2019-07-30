@@ -14,6 +14,7 @@ technologies used:
 * webpack
 * karma
 * mocha
+* chai
 
 as an example:
 
