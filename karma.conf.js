@@ -63,8 +63,9 @@ module.exports = function(config) {
       dir: path.join(__dirname, 'coverage'),
       reports: [ 'html', 'lcovonly', 'text-summary' ],
       fixWebpackSourcePaths: true,
-      skipFilesWithNoCoverage: true,
-      verbose: true
+      skipFilesWithNoCoverage: true
+      // ,
+      // verbose: true
     },
 
     colors: true,

@@ -4,19 +4,20 @@ blindlybright's webpack configuration (see ROADMAP.md for the plans)
 
 features:
 
-* development, production & test environments
-* webpack bundle analyzer instrument
+* `development`, `production` & `test` environments
+* `webpack bundle analyzer` instrument
 * code coverage map by tests
-* git hooks for precommit & prepush
+* `git hook` for `precommit`
 
 technologies used:
 
-* webpack
-* karma
-* mocha
-* chai
+* `webpack` (module bundler)
+* `karma` (test runner)
+* `mocha` (test description)
+* `chai` (tests assertion library)
+* `sinon` (fakes tests availabilities)
 
 as an example:
 
-* sass
-* postcss
+* `sass`
+* `postcss`

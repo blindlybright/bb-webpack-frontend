@@ -21,6 +21,7 @@ class Comp {
 }
 new Comp;
 
+
 // fetch('json/json.json', {})
 //   .then((response) => response.json())
 //   .then((response) => {
@@ -29,3 +30,19 @@ new Comp;
 //   }, (error) => {
 //     console.error(error);
 //   });
+
+
+// todo: check for async/await abilities using
+// https://www.npmjs.com/package/babel-plugin-transform-runtime
+// async function fetchExample() {
+//   let response = await fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits');
+//
+//   let commits = await response.json(); // получаем тело ответа и преобразовываем в JSON
+//
+//   return commits;
+// }
+//
+// fetchExample().then((commits) => {
+//   alert(commits[0].author.login);
+//   console.log(43, commits);
+// });

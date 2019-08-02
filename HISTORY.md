@@ -1,5 +1,11 @@
 ### ChangeLog
 
+###### v0.0.9 [2019.08.02|13:05~4]
+
+* add `sinon` for spies, stubs, fakes
+* add simple examples for sinon tests
+* remove `prepush` git hook testing
+
 ###### v0.0.8 [2019.07.30|16:40~.5]
 
 * add `chai` for asserts library
