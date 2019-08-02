@@ -1,5 +1,9 @@
 ### ChangeLog
 
+###### v0.0.10 [2019.08.02|17:05~2]
+
+* add `async`|`await` support for javascript with `babel` transpiler
+
 ###### v0.0.9 [2019.08.02|13:05~4]
 
 * add `sinon` for spies, stubs, fakes

@@ -21,28 +21,28 @@ class Comp {
 }
 new Comp;
 
+// NB: next will get an error while served locally from file://
+fetch('json/json.json', {})
+  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    console.log(JSON.stringify(response));
+  }, (error) => {
+    console.error(error);
+  });
 
-// fetch('json/json.json', {})
-//   .then((response) => response.json())
-//   .then((response) => {
-//     console.log(response);
-//     console.log(JSON.stringify(response));
-//   }, (error) => {
-//     console.error(error);
-//   });
 
+// NB: example of async/await using
+async function fetchExample() {
+  let response = await fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits');
+  console.log(39, response);
 
-// todo: check for async/await abilities using
-// https://www.npmjs.com/package/babel-plugin-transform-runtime
-// async function fetchExample() {
-//   let response = await fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits');
-//
-//   let commits = await response.json(); // получаем тело ответа и преобразовываем в JSON
-//
-//   return commits;
-// }
-//
-// fetchExample().then((commits) => {
-//   alert(commits[0].author.login);
-//   console.log(43, commits);
-// });
+  let commits = await response.json(); // получаем тело ответа и преобразовываем в JSON
+  console.log(42, commits);
+
+  return commits;
+}
+
+fetchExample().then((commits) => {
+  console.log(49, commits[0].author.login);
+});

@@ -15,7 +15,7 @@ technologies used:
 * `karma` (test runner)
 * `mocha` (test description)
 * `chai` (tests assertion library)
-* `sinon` (fakes tests availabilities)
+* `sinon` (tests availabilities: spies, stubs, mocks, fakes)
 
 as an example:
 
