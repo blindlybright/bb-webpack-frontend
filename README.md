@@ -6,9 +6,10 @@ features:
 
 * `development`, `production` & `test` environments
 * `webpack bundle analyzer` instrument
-* code coverage map by tests
+* code coverage map while tests
 * `git hook` for `precommit`
 * support for js's `generators`, `async`|`await`
+* support of mocks writing (integrated with `development` mode)
 
 technologies used:
 

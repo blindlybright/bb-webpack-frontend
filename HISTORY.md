@@ -1,5 +1,9 @@
 ### ChangeLog
 
+###### v0.0.11 [2019.08.02|20:45~1.5]
+
+* add ability of `mocks` writing (for independent `api` development)
+
 ###### v0.0.10 [2019.08.02|17:05~2]
 
 * add `async`|`await` support for javascript with `babel` transpiler
