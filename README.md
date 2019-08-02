@@ -8,6 +8,7 @@ features:
 * `webpack bundle analyzer` instrument
 * code coverage map by tests
 * `git hook` for `precommit`
+* support for js's `generators`, `async`|`await`
 
 technologies used:
 

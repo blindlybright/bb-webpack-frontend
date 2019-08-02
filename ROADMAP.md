@@ -1,7 +1,6 @@
 ### RoadMap
 
 * add `mocks` optional using (for independent `api` development, supposedly `connect-api-mocker`)
-* add `async`|`await` support
 * add `typescript` language supporting
 
 
