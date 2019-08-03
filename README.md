@@ -10,7 +10,7 @@ features:
 * support of mocks writing (integrated with `development` mode)
 * `typescript` support
 * tests for js & ts
-* code coverage map while test
+* code coverage map while test stage
 * `git hook` for `precommit`
 
 technologies used:
