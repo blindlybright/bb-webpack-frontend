@@ -4,12 +4,12 @@
 // so that they are added to the webpack bundle
 
 
-const testsContext = require.context('./src', true, /.*\.spec\.js$/);
+const testsContext = require.context('./src', true, /.*\.spec\.js$|.*\.spec\.ts$/);
 testsContext.keys().forEach(testsContext);
 
 
 // modules that are not tests
-const modulesContext = require.context('./src', true, /^(?!.*(?:\.spec\.js$)).*\.js$/);
+const modulesContext = require.context('./src', true, /^(?!.*(?:[\.spec\.js$|\.spec\.ts$])).*\.js$/);
 modulesContext.keys().forEach(modulesContext);
 
 module.exports = {

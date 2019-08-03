@@ -1,5 +1,12 @@
 ### ChangeLog
 
+###### v0.0.12 [2019.08.03|20:50~1]
+
+* add `typescript` language supporting
+* add examples for inclusion of ts into js & back
+* tests for `typescript`
+* types for `mocha`
+
 ###### v0.0.11 [2019.08.02|20:45~1.5]
 
 * add ability of `mocks` writing (for independent `api` development)

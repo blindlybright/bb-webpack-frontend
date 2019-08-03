@@ -1,6 +1,7 @@
 ### RoadMap
 
-* add `typescript` language supporting
+* add `tslint` for typescript [?]
+* add `eslint` for javascript [?]
 
 
 

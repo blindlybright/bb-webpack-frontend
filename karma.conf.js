@@ -26,7 +26,7 @@ webpackConfig.module.rules[2].use = {
 
 // add post loader for istanbul coverage loader
 webpackConfig.module.rules.push({
-  test: /\.js$|\.jsx$/,
+  test: /\.js$|\.jsx$|\.ts$|\.tsx$/,
   use: {
     loader: 'istanbul-instrumenter-loader',
     options: {
@@ -35,7 +35,7 @@ webpackConfig.module.rules.push({
   },
   include: path.resolve('src/'),
   enforce: 'post',
-  exclude: /node_modules|\.spec\.js$/,
+  exclude: /node_modules|\.spec\.js$|\.spec\.ts$/,
 });
 
 

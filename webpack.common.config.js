@@ -17,6 +17,9 @@ function config(opts) {
 			filename: opts.isDevelopment ? "js/[name].bundle.js" : "js/[name].[hash].bundle.js",
 			publicPath: ""
 		},
+		resolve: {
+			extensions: [".ts", ".js"] // Priorities while resolving require with absent extensions
+		},
 		optimization: {
 			runtimeChunk: false, // building 'runtime' chunk
 			splitChunks: {
@@ -127,6 +130,11 @@ function config(opts) {
 							name: 'images/[name].[ext]'
 						}
 					}]
+				},
+				{
+					test: /\.tsx?$/,
+					exclude: /(node_modules|bower_components)/,
+					loader: "ts-loader"
 				}
 			]
 		},

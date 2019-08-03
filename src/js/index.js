@@ -12,6 +12,9 @@ import {
 } from './examples/fn';
 
 
+import { str, testType } from './examples/test.ts';
+
+console.log(17, str, testType(123));
 
 new ComponentClass;
 
