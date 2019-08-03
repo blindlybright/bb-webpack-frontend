@@ -1,62 +1,27 @@
+// styles
 import '../scss/styles.scss';
-import { _ } from './vendors.js';
-import { add } from './fn.js';
 
-function component() {
-    const element = document.createElement('div');
+// executables modules, please avoid this pattern
+import './examples/fetch';
 
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+// includes used
+import { ComponentClass } from './examples/component.class';
+import {
+    createDOMComponent,
+    fetchExample
+} from './examples/fn';
 
-    return element;
-}
 
-document.body.appendChild(component());
 
-class ComponentClass {
-    constructor() {
-        console.log(add(1, 107));
-    }
-}
 new ComponentClass;
 
 
 
-/*
- * NB: next will get an error while served locally with file://
- */
-fetch(
-    '/json/json.json'
-)
-.then((response) => response.json())
-.then((response) => {
-    console.log(response);
-    console.log(JSON.stringify(response));
-}, (error) => {
-    console.error(error);
-});
+document.body.appendChild(createDOMComponent());
 
 
 
-/*
- * NB: example of async/await syntax
- */
-async function fetchExample(url) {
-    const response = await fetch(url);
-    console.log('response on ', url, ' is ', response);
-
-    const json = await response.json(); // получаем тело ответа и преобразовываем в JSON
-    console.log('resulted json of ', url, ' is ', json);
-
-    return json;
-}
-
-
-
-/*
- * NB: work with mocker-api configured data
- */
-// fetch original data
+// fetchExample used to fetch original data directly
 fetchExample(
     // 'https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits'
     'https://api.github.com/repos/blindlybright/bb-webpack-frontend/commits'
@@ -64,6 +29,11 @@ fetchExample(
     console.log(59, commits[0].author.login);
 });
 
+
+
+/*
+ * NB: work with mocker-api configured data
+ */
 // fetch data through webpack-dev-server proxy
 fetchExample(
     // '/repos/javascript-tutorial/en.javascript.info/commits'
@@ -85,5 +55,3 @@ fetchExample(
 ).then((data) => {
     console.log(81, data);
 });
-
-

@@ -151,3 +151,11 @@ describe("#2: sinon's spies", function() {
 //     });
 // });
 
+
+// https://sinonjs.org/releases/latest/mocks/
+// describe("#5: Mock's Examples", function () {
+//     it('should ', function () {
+//
+//     });
+// });
+
