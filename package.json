@@ -27,7 +27,8 @@
     "units:watch": "npm run units -- --single-run=false --auto-watch=true --reporters=progress",
     "eslint": "eslint --color --cache --ext .js,.ts src",
     "eslint:dump": "eslint --print-config ./.eslintrc.json",
-    "mocks": "mocker ./mocker-api --host localhost --port 8000"
+    "mocks": "mocker ./mocker-api --host localhost --port 8000",
+    "prepare:husky": "husky install"
   },
   "author": "blindlybright",
   "license": "ISC",
