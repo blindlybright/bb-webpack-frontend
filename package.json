@@ -68,7 +68,7 @@
     "mini-css-extract-plugin": "^0.7.0",
     "mocha": "^9.2.1",
     "mocker-api": "^2.9.5",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "null-loader": "^3.0.0",
     "path": "^0.12.7",
     "postcss": "^8.4.8",
