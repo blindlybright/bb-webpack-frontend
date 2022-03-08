@@ -1,8 +1,8 @@
-import { add } from "./fn.js";
+import { add } from './fn.js';
 
 export class ComponentClass {
     constructor() {
-        console.log(add(1, 107));
+        console.log(add(1, 107)); // eslint-disable-line @typescript-eslint/no-magic-numbers
     }
 }
 

@@ -3,7 +3,7 @@ import { testType } from './test';
 const chai = require("chai");
 const expect = chai.expect; // or should, that are useful for sinon
 
-const sinon = require("sinon");
+// const sinon = require("sinon");
 const sinonChai = require("sinon-chai");
 chai.use(sinonChai);
 

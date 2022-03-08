@@ -1,5 +1,30 @@
 ### ChangeLog
 
+###### v0.0.13 [2019.08.03|20:50~1]
+
+* add `noProxy` flag & `start:noproxy` task
+* add coverage remove on clear
+* add `NO_MOCKS` command line flag, add `NO_WEBPACK_MOCKS` flag with js
+* add `tinyServer` for serve:compiled task
+* add `eslint@7` as linter
+  * add `.eslintrc.json` & `.eslintignore` as configs for eslint
+* add ability to use `css` with `scss`
+* add `rouble` `font` as example
+  * add examples of use rouble font icon
+* add `__*` mask for `.gitignore`
+* add `env.js` to define environment contexts (now prod is deployed to `spa/` folder)
+* fix `autoprefixer` use with `postcss-loader`
+* fix `webfont` use with webpack
+* add wrapper `wrapLinkWithWebpackContextPrefix` for correct fetch paths in different environments
+* add wrapper `wrapLinkToLocalApiMocker` for fix mocked data url on different environments
+* add use of app `VERSION`
+* update node packages: `typescript`, `postcss-loader`, `node-sass`, `mocker-api`, `mocha`, `husky`
+* add `postcss`, `eslint`, `eslint-plugin-optimize-regex`, `eslint-plugin-promise`, `eslint-plugin-sonarjs`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`
+* add appropriate tasks to package.json
+* add `package-lock.json` versioning
+
+[tested on node@14.19.0, npm@6.14.16]
+
 ###### v0.0.12 [2019.08.03|20:50~1]
 
 * add `typescript` language supporting

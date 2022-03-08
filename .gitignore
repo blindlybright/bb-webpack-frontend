@@ -3,7 +3,6 @@
 
 # node && npm
 node_modules/
-package-lock.json
 
 # builds and temporaries
 dist/
@@ -13,3 +12,11 @@ coverage/
 # local info, not for repo
 stats.json
 readme.txt
+
+#local drafts
+__**
+*/__*
+*/*__*
+
+#eslint
+.eslintcache

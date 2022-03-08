@@ -1,8 +1,12 @@
+@import "fonts";
+
 $bg-color: #e81;
 
-html {
-	body {
-		background: $bg-color;
-		background-image: url(./../images/boom.svg);
-	}
+body {
+    background: $bg-color;
+    background-image: url(./../images/boom.svg);
+}
+
+h1 {
+    font-family: 'Google Sans', tahoma, verdana, sans-serif;
 }

@@ -1,0 +1,6 @@
+// * font display strategy *
+$gp-font-display: swap;
+
+@import "../fonts/base-font";
+@import "../fonts/rouble/css/rouble.css";
+//@import url(../fonts/rouble/css/rouble.css); // nb: likely the same as direct import without url()

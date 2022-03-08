@@ -10,5 +10,5 @@ function testType(s: string): string {
 
 export {
     str,
-    testType
-}
+    testType,
+};

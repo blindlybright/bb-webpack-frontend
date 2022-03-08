@@ -1,0 +1,27 @@
+/*!
+ * Font Awesome Free 5.0.9 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'als_rublregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../webfonts/rouble-webfont.eot");
+  src: url("../webfonts/rouble-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/rouble-webfont.woff2") format("woff2"),
+    url("../webfonts/rouble-webfont.woff") format("woff"),
+    url("../webfonts/rouble-webfont.ttf") format("truetype"),
+    url("../webfonts/rouble-webfont.svg#fontawesome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-currency {
+  font-style: normal;
+}
+.icon-currency_rouble {
+  font-family: 'als_rublregular';
+}
+.icon-currency_rouble:before {
+  content: 'i';
+}
