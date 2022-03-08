@@ -28,7 +28,9 @@
     "eslint": "eslint --color --cache --ext .js,.ts src",
     "eslint:dump": "eslint --print-config ./.eslintrc.json",
     "mocks": "mocker ./mocker-api --host localhost --port 8000",
-    "prepare:husky": "husky install"
+    "prepare": "husky install",
+    "husky:init": "npx husky-init",
+    "pre-commit": "npm test"
   },
   "author": "blindlybright",
   "license": "ISC",
@@ -55,7 +57,7 @@
     "eslint-plugin-sonarjs": "^0.12.0",
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "karma": "^4.2.0",
     "karma-chrome-launcher": "^3.0.0",
@@ -89,10 +91,5 @@
     "last 2 version",
     "ie >= 10",
     "> 1%"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  }
+  ]
 }
